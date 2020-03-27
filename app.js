@@ -15,9 +15,9 @@ app.get("/", function(req, res)
     res.sendFile(__dirname + "/index.html");
 });
 
-const arrayMovies=[];
-const images=[];
-const type=[];
+let arrayMovies=[];
+let images=[];
+let type=[];
 
 app.post("/", function(req,res)
 {
@@ -28,6 +28,10 @@ app.post("/", function(req,res)
     .header("X-RapidAPI-Key", Apikey)
     .end(function (result) 
     {
+        arrayMovies=[];
+        images=[];
+        type=[];
+
         for(let i=0;i<result.body.Search.length;i++)
         {
            arrayMovies.push(result.body.Search[i].Title);
