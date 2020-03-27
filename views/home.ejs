@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+  <body>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Movies that match your search</h1>
+    <p class="lead">See which ones you like and head over to fmovies, and watch them!</p>
+  </div>
+  </div>
+  
+   <% for(var i=0; i<arr1.length;i++) { %>        
+    <br>
+    <div align="center">
+
+    <div class="card" style="width: 18rem;">
+    <img src= "<%= arr2[i] %>" class="card-img-top" alt="Poster not available">
+    <div class="card-body">
+    <h5 class="card-title"><%= arr1[i] %></h5>
+    <p class="card-text">An interesting <%= arr3[i] %> with an awesome storyline. A must watch and highly recommended by various users.</p>
+    <a href="https://fmovies.win/" class="btn btn-primary">WATCH</a>
+    </div>
+
+    </div>
+    <% } %>   
+
+ </body>
+ </head>
+ </html>
