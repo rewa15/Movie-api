@@ -22,7 +22,7 @@ let type=[];
 app.post("/", function(req,res)
 {
     const query= req.body.keyword;
-    const Apikey = "e60a021e";   
+    const Apikey = "xxxxxxx";   
     const url = "https://www.omdbapi.com/?apikey="+Apikey+"&s="+query;
     unirest.post(url)
     .header("X-RapidAPI-Key", Apikey)
