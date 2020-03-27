@@ -32,13 +32,21 @@ app.post("/", function(req,res)
         images=[];
         type=[];
 
+        if(result.body.Response == "False")
+        {
+        res.render("failure.ejs");
+        }
+        else
+        {
         for(let i=0;i<result.body.Search.length;i++)
         {
            arrayMovies.push(result.body.Search[i].Title);
            images.push(result.body.Search[i].Poster);
            type.push(result.body.Search[i].Type);
         }
+
         res.render("home.ejs",{arr1: arrayMovies, arr2: images, arr3:type});
+        }
     });   
 });
 
