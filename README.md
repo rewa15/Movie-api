@@ -1,7 +1,7 @@
 # Movie-api
 🎬 A website app made using OMDB API that allows you to search your favourite movies!
 
-## ![tenor](https://user-images.githubusercontent.com/26508129/77820701-20ac5d00-710a-11ea-8ccd-4c93def2dd31.gif)
+ ![tenor](https://user-images.githubusercontent.com/26508129/77820701-20ac5d00-710a-11ea-8ccd-4c93def2dd31.gif)
 
 ## ❓ How To Run 
 ###
